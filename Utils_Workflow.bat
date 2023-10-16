@@ -45,16 +45,16 @@ REM python xx.py %lg%
 
 
 :: Deploy Similarity Code
-set TMP=Deploy Similarity Code...
+set TMP=Deploy XXXX Code...
 echo. && echo %TMP% && echo %TMP% >> info.log
-pushd XXXXX/data %lg%
+pushd XXXX/data %lg%
 python AutoDeploy.py %lg%
 pushd %CURRENT_DIR% 
 
 :: Batch Run Similarity Code
-set TMP=Batch Run Similarity Code...
+set TMP=Batch Run XXXX Code...
 echo. && echo %TMP% && echo %TMP% >> info.log
-pushd XXXXX/input %lg%
+pushd XXXX/input %lg%
 python ToDo.py %lg%
 python ./output/AutoDeploy.py %lg%
 pushd %CURRENT_DIR%
